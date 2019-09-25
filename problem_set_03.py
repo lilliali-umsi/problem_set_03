@@ -46,7 +46,7 @@ love_quotes_indices = []
 for quote in love_quotes:
     if 'Love' in quote:
         if True:
-            love_quotes_indices.append(quote)
+            love_quotes_indices.append(love_quotes.index(quote))
 
 
 print(love_quotes_indices)
@@ -68,9 +68,11 @@ authors_indices = []
 authors_indices.append(authors.pop(0))
 authors_indices.append(authors.pop(0))
 authors_indices.append(authors.pop(2))
+#print(authors_indices)
 quote_with_author = zip(love_quotes_indices, authors_indices)
 quote_with_author = set(quote_with_author)
 quote_with_author = list(quote_with_author)
+#print(quote_with_author)
 for quote in quote_with_author:
     quotes_with_author.append(' - '.join(quote))
 
