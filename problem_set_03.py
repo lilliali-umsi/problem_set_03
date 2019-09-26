@@ -63,7 +63,9 @@ print(love_quotes_indices)
 # BEGIN PROBLEM 2 SOLUTION
 
 quotes_with_author = []
-
+for x in love_quotes_indices:
+    quotes_with_author.append(''.join([love_quotes[x], ' - ', authors[x]]))
+print(quotes_with_author)
 
 # END PROBLEM 2 SOLUTION
 
