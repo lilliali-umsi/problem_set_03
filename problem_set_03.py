@@ -102,11 +102,10 @@ print(i_wrote_it)
 # BEGIN PROBLEM 4 SOLUTION
 
 def count_words_in_quote(quote):
-    pass
+    return len(quote)
 
-
-first_word_count = None
-last_word_count = None
+first_word_count = count_words_in_quote(love_quotes[1])
+last_word_count = count_words_in_quote(love_quotes[4])
 
 print(first_word_count, last_word_count)
 
