@@ -151,9 +151,14 @@ print(no_love_quotes)
 # Print total_word_count.
 
 # BEGIN PROBLEM 6 SOLUTION
-
-total_word_count = None
-
+yes_love_quotes=[]
+for quote in love_quotes:
+    if is_quote_with_love(quote):
+        if True:
+            yes_love_quotes.append(quote)
+total_word_count = 0
+for quote in yes_love_quotes:
+    total_word_count += count_words_in_quote(quote)
 
 print(total_word_count)
 
