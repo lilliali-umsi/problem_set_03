@@ -125,11 +125,18 @@ print(first_word_count, last_word_count)
 
 # BEGIN PROBLEM 5 SOLUTION
 def is_quote_with_love(quote):
-    pass
-
-
+    if 'lov' in quote.lower():
+        return True
+    else:
+        return False
 no_love_quotes = []
 
+for quote in love_quotes:
+    if is_quote_with_love(quote):
+        if True:
+            continue
+    else:
+        no_love_quotes.append(quote)
 
 print(no_love_quotes)
 
