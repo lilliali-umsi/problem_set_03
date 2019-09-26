@@ -78,13 +78,12 @@ print(quotes_with_author)
 # BEGIN PROBLEM 3 SOLUTION
 
 i_wrote_it = []
-quotes_with_author_string=[]
+string =[]
 def who_wrote_it(quote_with_author):
-    return quote_with_author[1]
+    return quote_with_author.split(' - ')[1]
+
 for quote in quotes_with_author:
-    quotes_with_author = quote.split(' - ')
-    #print(quotes_with_author)
-    i_wrote_it.append(who_wrote_it(quotes_with_author))
+    i_wrote_it.append(who_wrote_it(quote))
 i_wrote_it.sort()
 print(i_wrote_it)
 
