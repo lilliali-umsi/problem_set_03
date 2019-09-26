@@ -74,17 +74,18 @@ print(quotes_with_author)
 # Write a function named who_wrote_it which will return the author of a quote when given the combined string "<quote> - <author>".
 # Apply the function to quotes_with_author and store the result in the list i_wrote_it.
 # Sort the list i_wrote_it based on alphabetic order. Print i_wrote_it.
+
 # BEGIN PROBLEM 3 SOLUTION
 
 i_wrote_it = []
-
-def who_wrote_it(quotes_with_author):
-    for quote in quotes_with_author:
-        i_wrote_it.append(quote.split(' - '))
-    for x in i_wrote_it:
-        x.pop(0)
-    i_wrote_it.sort()
-who_wrote_it(quotes_with_author)
+quotes_with_author_string=[]
+def who_wrote_it(quote_with_author):
+    return quote_with_author[1]
+for quote in quotes_with_author:
+    quotes_with_author = quote.split(' - ')
+    #print(quotes_with_author)
+    i_wrote_it.append(who_wrote_it(quotes_with_author))
+i_wrote_it.sort()
 print(i_wrote_it)
 
 # END PROBLEM 3 SOLUTION
