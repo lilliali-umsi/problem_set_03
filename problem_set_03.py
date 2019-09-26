@@ -102,9 +102,10 @@ print(i_wrote_it)
 # BEGIN PROBLEM 4 SOLUTION
 
 def count_words_in_quote(quote):
+    quote = quote.split()
     return len(quote)
 
-first_word_count = count_words_in_quote(love_quotes[1])
+first_word_count = count_words_in_quote(love_quotes[0])
 last_word_count = count_words_in_quote(love_quotes[4])
 
 print(first_word_count, last_word_count)
